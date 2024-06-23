@@ -1,3 +1,9 @@
+"use client";
+import Feed from "@components/Feed";
+import Modal from "react-modal";
+
+Modal.setAppElement(".main");
+
 export default function HOME() {
   return (
     <section className="w-full flex-center flex-col">
@@ -10,8 +16,7 @@ export default function HOME() {
         Prompts Wizard is an open-source AI prompting tool for modern world to
         discover, create and share creative prompts
       </p>
-
-      {/* <Feed /> */}
+      <Feed />
     </section>
   );
 }
